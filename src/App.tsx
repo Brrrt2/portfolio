@@ -233,7 +233,7 @@ function App() {
 
           <div className="flex flex-wrap justify-center gap-4 mb-8 animate-slide-up animation-delay-600">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/albertalcance.ecnaclatrebla/"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-md text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 hover:scale-105 border border-white/20 hover:border-purple-400/50"
@@ -242,7 +242,7 @@ function App() {
               <span className="font-medium">Facebook</span>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/john-albert-alcance-4453b5308/"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-md text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 hover:scale-105 border border-white/20 hover:border-purple-400/50"
@@ -251,14 +251,14 @@ function App() {
               <span className="font-medium">LinkedIn</span>
             </a>
             <a
-              href="mailto:albert@gmail.com"
+              href="mailto:jalbertalcance@gmail.com"
               className="group flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-md text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 hover:scale-105 border border-white/20 hover:border-purple-400/50"
             >
               <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
               <span className="font-medium">Gmail</span>
             </a>
             <a
-              href="mailto:albert@outlook.com"
+              href="mailto:johnalcance02@outlook.com"
               className="group flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-md text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 hover:scale-105 border border-white/20 hover:border-purple-400/50"
             >
               <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
