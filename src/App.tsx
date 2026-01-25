@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, Facebook, Download, Code2, Server, Wrench, ExternalLink, Menu, X, ChevronDown, Sparkles, Zap, Target, Rocket } from 'lucide-react';
+import { Github, Linkedin, Mail, Facebook, Download, Code2, Server, Wrench, ExternalLink, Menu, X, ChevronDown, Sparkles, Zap, Target, Rocket, Brain, Palette, Terminal } from 'lucide-react';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -58,16 +58,49 @@ function App() {
     document.body.removeChild(link);
   };
 
-  const frontendTools = [
-    'React', 'TypeScript', 'Tailwind CSS', 'Next.js', 'Vue.js', 'HTML5/CSS3'
+  const languages = [
+    'JavaScript',
+    'TypeScript',
+    'Python',
+    'SQL',
+    'HTML',
+    'CSS'
   ];
 
-  const backendTools = [
-    'Node.js', 'Python', 'Express', 'PostgreSQL', 'MongoDB', 'REST APIs'
+  const frontendStack = [
+    'React',
+    'Tailwind CSS',
+    'Vite'
   ];
 
-  const otherTools = [
-    'Git', 'Docker', 'AWS', 'CI/CD', 'Linux', 'Automation Scripts'
+  const backendStack = [
+    'Node.js',
+    'Supabase',
+    'Firebase',
+    'Flask'
+  ];
+
+  const dataAndML = [
+    'Pandas',
+    'NumPy',
+    'Seaborn',
+    'Matplotlib',
+    'TensorFlow'
+  ];
+
+  const devTools = [
+    'Git',
+    'ESLint',
+    'PostCSS',
+    'VS Code',
+    'Cursor'
+  ];
+
+  const designTools = [
+    'Figma',
+    'Canva',
+    'Adobe Photoshop',
+    'Adobe Premiere Pro'
   ];
 
   const projects = [
@@ -98,7 +131,7 @@ function App() {
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'skills', label: 'Skills' },
-    { id: 'portfolio', label: 'Portfolio' },
+    { id: 'portfolio', label: 'Projects' },
     { id: 'contact', label: 'Contact' }
   ];
 
@@ -318,27 +351,41 @@ function App() {
               </p>
             </div>
             <div className="relative">
-              <div className="bg-gradient-to-br from-purple-900/50 to-red-900/50 backdrop-blur-md rounded-2xl p-8 shadow-xl transform hover:scale-105 transition-transform duration-300 border border-purple-500/20">
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center p-4 bg-slate-900/50 backdrop-blur-sm rounded-lg shadow-md hover:shadow-lg transition-shadow border border-purple-500/20">
-                    <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-red-400 mb-2">5+</div>
-                    <div className="text-sm text-slate-300">Years Experience</div>
-                  </div>
-                  <div className="text-center p-4 bg-slate-900/50 backdrop-blur-sm rounded-lg shadow-md hover:shadow-lg transition-shadow border border-purple-500/20">
-                    <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-cyan-400 mb-2">50+</div>
-                    <div className="text-sm text-slate-300">Projects Completed</div>
-                  </div>
-                  <div className="text-center p-4 bg-slate-900/50 backdrop-blur-sm rounded-lg shadow-md hover:shadow-lg transition-shadow border border-purple-500/20">
-                    <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-2">30+</div>
-                    <div className="text-sm text-slate-300">Happy Clients</div>
-                  </div>
-                  <div className="text-center p-4 bg-slate-900/50 backdrop-blur-sm rounded-lg shadow-md hover:shadow-lg transition-shadow border border-purple-500/20">
-                    <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-purple-400 mb-2">100%</div>
-                    <div className="text-sm text-slate-300">Satisfaction</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div className="bg-gradient-to-br from-purple-900/50 to-red-900/50 backdrop-blur-md rounded-2xl p-8 shadow-xl transform hover:scale-105 transition-transform duration-300 border border-purple-500/20">
+    <div className="grid grid-cols-2 gap-6">
+
+      <div className="text-center p-4 bg-slate-900/50 backdrop-blur-sm rounded-lg shadow-md border border-purple-500/20">
+        <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-red-400 mb-2">
+          300+
+        </div>
+        <div className="text-sm text-slate-300">Internship Hours</div>
+      </div>
+
+      <div className="text-center p-4 bg-slate-900/50 backdrop-blur-sm rounded-lg shadow-md border border-purple-500/20">
+        <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-cyan-400 mb-2">
+          10+
+        </div>
+        <div className="text-sm text-slate-300">Projects Built</div>
+      </div>
+
+      <div className="text-center p-4 bg-slate-900/50 backdrop-blur-sm rounded-lg shadow-md border border-purple-500/20">
+        <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-2">
+          IT
+        </div>
+        <div className="text-sm text-slate-300">Admin Internship</div>
+      </div>
+
+      <div className="text-center p-4 bg-slate-900/50 backdrop-blur-sm rounded-lg shadow-md border border-purple-500/20">
+        <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-purple-400 mb-2">
+          ∞
+        </div>
+        <div className="text-sm text-slate-300">Learning & Improving</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
           </div>
         </div>
       </section>
@@ -351,17 +398,17 @@ function App() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-red-500 mx-auto mb-16"></div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Frontend */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Languages */}
             <div className="group bg-gradient-to-br from-purple-900/40 to-red-900/40 backdrop-blur-md p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-purple-500/30 hover:border-purple-400/50">
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-3 bg-gradient-to-br from-purple-500 to-red-500 rounded-lg group-hover:scale-110 transition-transform group-hover:rotate-6 shadow-lg">
-                  <Code2 className="w-6 h-6 text-white" />
+                  <Terminal className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-white">Frontend</h3>
+                <h3 className="text-2xl font-bold text-white">Languages</h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {frontendTools.map((tool, index) => (
+                {languages.map((tool, index) => (
                   <span
                     key={tool}
                     className="px-4 py-2 bg-slate-800/50 backdrop-blur-sm text-slate-200 rounded-lg text-sm font-medium shadow-sm hover:shadow-md hover:scale-105 transition-all cursor-default hover:bg-purple-500/20 hover:text-purple-300 border border-slate-700/50 hover:border-purple-500/50"
@@ -373,16 +420,16 @@ function App() {
               </div>
             </div>
 
-            {/* Backend */}
+            {/* Frontend Stack */}
             <div className="group bg-gradient-to-br from-red-900/40 to-cyan-900/40 backdrop-blur-md p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-red-500/30 hover:border-red-400/50">
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-3 bg-gradient-to-br from-red-500 to-cyan-500 rounded-lg group-hover:scale-110 transition-transform group-hover:rotate-6 shadow-lg">
-                  <Server className="w-6 h-6 text-white" />
+                  <Code2 className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-white">Backend</h3>
+                <h3 className="text-2xl font-bold text-white">Frontend Stack</h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {backendTools.map((tool, index) => (
+                {frontendStack.map((tool, index) => (
                   <span
                     key={tool}
                     className="px-4 py-2 bg-slate-800/50 backdrop-blur-sm text-slate-200 rounded-lg text-sm font-medium shadow-sm hover:shadow-md hover:scale-105 transition-all cursor-default hover:bg-red-500/20 hover:text-red-300 border border-slate-700/50 hover:border-red-500/50"
@@ -394,19 +441,82 @@ function App() {
               </div>
             </div>
 
-            {/* Others */}
+            {/* Backend Stack */}
             <div className="group bg-gradient-to-br from-cyan-900/40 to-purple-900/40 backdrop-blur-md p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-cyan-500/30 hover:border-cyan-400/50">
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-3 bg-gradient-to-br from-cyan-500 to-purple-500 rounded-lg group-hover:scale-110 transition-transform group-hover:rotate-6 shadow-lg">
-                  <Wrench className="w-6 h-6 text-white" />
+                  <Server className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-white">Others</h3>
+                <h3 className="text-2xl font-bold text-white">Backend Stack</h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {otherTools.map((tool, index) => (
+                {backendStack.map((tool, index) => (
                   <span
                     key={tool}
                     className="px-4 py-2 bg-slate-800/50 backdrop-blur-sm text-slate-200 rounded-lg text-sm font-medium shadow-sm hover:shadow-md hover:scale-105 transition-all cursor-default hover:bg-cyan-500/20 hover:text-cyan-300 border border-slate-700/50 hover:border-cyan-500/50"
+                    style={{ animationDelay: `${index * 50}ms` }}
+                  >
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Data & ML */}
+            <div className="group bg-gradient-to-br from-purple-900/40 to-red-900/40 backdrop-blur-md p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-purple-500/30 hover:border-purple-400/50">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-3 bg-gradient-to-br from-purple-500 to-red-500 rounded-lg group-hover:scale-110 transition-transform group-hover:rotate-6 shadow-lg">
+                  <Brain className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-white">Data & ML</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {dataAndML.map((tool, index) => (
+                  <span
+                    key={tool}
+                    className="px-4 py-2 bg-slate-800/50 backdrop-blur-sm text-slate-200 rounded-lg text-sm font-medium shadow-sm hover:shadow-md hover:scale-105 transition-all cursor-default hover:bg-purple-500/20 hover:text-purple-300 border border-slate-700/50 hover:border-purple-500/50"
+                    style={{ animationDelay: `${index * 50}ms` }}
+                  >
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Dev Tools */}
+            <div className="group bg-gradient-to-br from-red-900/40 to-orange-900/40 backdrop-blur-md p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-red-500/30 hover:border-red-400/50">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-3 bg-gradient-to-br from-red-500 to-orange-500 rounded-lg group-hover:scale-110 transition-transform group-hover:rotate-6 shadow-lg">
+                  <Wrench className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-white">Dev Tools</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {devTools.map((tool, index) => (
+                  <span
+                    key={tool}
+                    className="px-4 py-2 bg-slate-800/50 backdrop-blur-sm text-slate-200 rounded-lg text-sm font-medium shadow-sm hover:shadow-md hover:scale-105 transition-all cursor-default hover:bg-red-500/20 hover:text-red-300 border border-slate-700/50 hover:border-red-500/50"
+                    style={{ animationDelay: `${index * 50}ms` }}
+                  >
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Design Tools */}
+            <div className="group bg-gradient-to-br from-red-900/40 to-purple-900/40 backdrop-blur-md p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-red-500/30 hover:border-red-400/50">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-3 bg-gradient-to-br from-red-500 to-purple-500 rounded-lg group-hover:scale-110 transition-transform group-hover:rotate-6 shadow-lg">
+                  <Palette className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-white">Design Tools</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {designTools.map((tool, index) => (
+                  <span
+                    key={tool}
+                    className="px-4 py-2 bg-slate-800/50 backdrop-blur-sm text-slate-200 rounded-lg text-sm font-medium shadow-sm hover:shadow-md hover:scale-105 transition-all cursor-default hover:bg-red-500/20 hover:text-red-300 border border-slate-700/50 hover:border-red-500/50"
                     style={{ animationDelay: `${index * 50}ms` }}
                   >
                     {tool}
@@ -422,7 +532,7 @@ function App() {
       <section id="portfolio" className="py-20 px-4 bg-slate-800/50 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-4">
-            Portfolio
+            Projects
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-red-500 mx-auto mb-16"></div>
 
@@ -488,7 +598,7 @@ function App() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             <a
-              href="mailto:albert@gmail.com"
+              href="mailto:jalbertalcance@gmail.com"
               className="group flex items-center gap-4 p-6 bg-slate-800/50 backdrop-blur-md rounded-xl shadow-md hover:shadow-xl transition-all hover:-translate-y-2 border border-slate-700/50 hover:border-purple-500/50"
             >
               <div className="p-3 bg-purple-500/20 rounded-lg group-hover:bg-gradient-to-br group-hover:from-purple-500 group-hover:to-red-500 transition-all">
@@ -496,7 +606,7 @@ function App() {
               </div>
               <div>
                 <div className="font-semibold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-red-400 transition-all">Email</div>
-                <div className="text-sm text-slate-400">albert@gmail.com</div>
+                <div className="text-sm text-slate-400">jalbertalcance@gmail.com</div>
               </div>
             </a>
 
@@ -527,7 +637,7 @@ function App() {
               <span className="font-medium">Facebook</span>
             </a>
             <a
-              href="https://github.com"
+              href="https://www.facebook.com/albertalcance.ecnaclatrebla/"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-2 px-6 py-3 bg-slate-800/50 backdrop-blur-md text-white rounded-lg shadow-md hover:shadow-xl transition-all hover:-translate-y-2 hover:scale-105 border border-slate-700/50 hover:border-purple-500/50"
