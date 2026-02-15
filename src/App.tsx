@@ -105,18 +105,18 @@ function App() {
 
   const projects = [
     {
-      title: 'Automated Deployment Pipeline',
-      description: 'Built a comprehensive CI/CD pipeline that reduced deployment time by 70% and automated testing across multiple environments.',
-      tech: ['Docker', 'Jenkins', 'AWS'],
-      link: '#',
-      icon: Rocket
+      title: 'Logix',
+      description: 'A digital purchase book system for encoding digital and printed receipts using Fine-Tuned TrOCR.',
+      tech: ['Node.js', 'Firebase', 'TrOCR'],
+      link: 'https://logix-one.vercel.app',
+      icon: '/assets/logo.png'
     },
     {
-      title: 'Inventory Management System',
-      description: 'Developed a full-stack application for real-time inventory tracking with automated reordering and analytics dashboard.',
-      tech: ['React', 'Node.js', 'PostgreSQL'],
-      link: '#',
-      icon: Target
+      title: 'JobSetGo!',
+      description: 'Developed a job search platform that connects job seekers with employers through an intuitive interface and advanced matching algorithms.',
+      tech: ['React', 'Next.js', 'Supabase'],
+      link: 'https://job-set-go.netlify.app',
+      icon: '/assets/Jobsetgo.png'
     },
     {
       title: 'Data Processing Automation',
@@ -538,6 +538,7 @@ function App() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => {
+              const isImage = typeof project.icon === 'string';
               const IconComponent = project.icon;
               return (
                 <div
@@ -546,12 +547,15 @@ function App() {
                 >
                   {/* Hover gradient overlay */}
                   <div className="absolute inset-0 bg-gradient-to-br from-purple-500/0 to-red-500/0 group-hover:from-purple-500/10 group-hover:to-red-500/10 transition-all duration-300"></div>
-                  
                   <div className="relative z-10">
                     <div className="mb-4 flex items-center gap-3">
-                      <div className="p-2 bg-gradient-to-br from-purple-500 to-red-500 rounded-lg group-hover:scale-110 group-hover:rotate-6 transition-transform shadow-lg">
-                        <IconComponent className="w-5 h-5 text-white" />
-                      </div>
+                      {isImage ? (
+                        <img src={project.icon} alt={project.title + ' logo'} className="w-16 h-16 object-contain group-hover:scale-110 transition-transform" />
+                      ) : (
+                        <div className="p-2 bg-gradient-to-br from-purple-500 to-red-500 rounded-lg group-hover:scale-110 group-hover:rotate-6 transition-transform shadow-lg flex items-center justify-center">
+                          <IconComponent className="w-5 h-5 text-white" />
+                        </div>
+                      )}
                       <h3 className="text-xl font-bold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-red-400 transition-all">
                         {project.title}
                       </h3>
@@ -611,7 +615,7 @@ function App() {
             </a>
 
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/john-albert-alcance-4453b5308/"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-4 p-6 bg-slate-800/50 backdrop-blur-md rounded-xl shadow-md hover:shadow-xl transition-all hover:-translate-y-2 border border-slate-700/50 hover:border-purple-500/50"
