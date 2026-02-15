@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, Facebook, Download, Code2, Server, Wrench, ExternalLink, Menu, X, ChevronDown, Sparkles, Zap, Target, Rocket, Brain, Palette, Terminal } from 'lucide-react';
+import { Github, Linkedin, Mail, Facebook, Download, Code2, Server, Wrench, ExternalLink, Menu, X, ChevronDown, Sparkles, Zap, Brain, Palette, Terminal } from 'lucide-react';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -107,7 +107,7 @@ function App() {
     {
       title: 'Logix',
       description: 'A digital purchase book system for encoding digital and printed receipts using Fine-Tuned TrOCR.',
-      tech: ['Node.js', 'Firebase', 'TrOCR'],
+      tech: ['Node.js', 'Firebase', 'TrOCR','NER'],
       link: 'https://logix-one.vercel.app',
       icon: '/assets/logo.png'
     },
@@ -550,7 +550,7 @@ function App() {
                   <div className="relative z-10">
                     <div className="mb-4 flex items-center gap-3">
                       {isImage ? (
-                        <img src={project.icon} alt={project.title + ' logo'} className="w-16 h-16 object-contain group-hover:scale-110 transition-transform" />
+                        <img src={project.icon as string} alt={project.title + ' logo'} className="w-16 h-16 object-contain group-hover:scale-110 transition-transform" />
                       ) : (
                         <div className="p-2 bg-gradient-to-br from-purple-500 to-red-500 rounded-lg group-hover:scale-110 group-hover:rotate-6 transition-transform shadow-lg flex items-center justify-center">
                           <IconComponent className="w-5 h-5 text-white" />
