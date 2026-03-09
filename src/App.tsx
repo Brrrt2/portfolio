@@ -358,8 +358,13 @@ function App() {
               </p>
             </div>
             <div className="relative">
+  <div className="p-4 flex items-center justify-center  rounded-lg  ">
+      <img src="/assets/profile2.jpg" alt="image" className="w-70 md:h-96 lg:h-96 rounded-lg shadow-lg"/>
+
+  </div>
   <div className="bg-gradient-to-br from-purple-900/50 to-red-900/50 backdrop-blur-md rounded-2xl p-8 shadow-xl transform hover:scale-105 transition-transform duration-300 border border-purple-500/20">
     <div className="grid grid-cols-2 gap-6">
+      
 
       <div className="text-center p-4 bg-slate-900/50 backdrop-blur-sm rounded-lg shadow-md border border-purple-500/20">
         <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-red-400 mb-2">
