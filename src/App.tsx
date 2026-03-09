@@ -70,7 +70,8 @@ function App() {
   const frontendStack = [
     'React',
     'Tailwind CSS',
-    'Vite'
+    'Vite',
+    'Next.js'
   ];
 
   const backendStack = [
@@ -153,9 +154,8 @@ function App() {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center gap-2">
-              <div className="p-2 bg-gradient-to-br from-purple-500 to-red-500 rounded-lg shadow-lg">
-                <Sparkles className="w-6 h-6 text-white" />
-              </div>
+              <img src="/assets/Profile.png" alt="image" className="w-10 h-10" />
+              
               <span className="text-xl font-bold text-white">Albert</span>
             </div>
 
@@ -256,7 +256,7 @@ function App() {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-200 mb-6 animate-slide-up animation-delay-200">
-              A developer who aims to automate systems and streamline workflows
+              An aspiring and passionate software engineer and web developer
             </p>
             <p className="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed animate-slide-up animation-delay-400">
               I specialize in building efficient, scalable solutions that transform complex processes into seamless automated systems.
@@ -336,18 +336,25 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-slate-300 leading-relaxed">
-                I'm a passionate developer with a strong focus on automation and efficiency. 
-                My journey in software development has been driven by the desire to solve complex problems 
-                and create solutions that make a real impact.
+                I’m an aspiring and passionate software engineer and web developer,
+                 driven by the desire to solve complex problems and create impactful
+                  solutions. My journey in technology is fueled by curiosity, creativity, 
+                  and a commitment to building applications that balance automation, efficiency,
+                   and user experience.
               </p>
               <p className="text-lg text-slate-300 leading-relaxed">
-                With expertise spanning both frontend and backend technologies, I bring a holistic approach 
-                to building applications. I believe in writing clean, maintainable code and following best 
-                practices to ensure scalability and performance.
+                With growing expertise in both frontend and backend development,
+                 I bring a holistic approach to projects—writing clean, maintainable
+                  code and following best practices to ensure scalability and performance.
               </p>
               <p className="text-lg text-slate-300 leading-relaxed">
-                When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, 
-                and continuously learning to stay at the forefront of industry trends.
+                Beyond coding, I enjoy immersing myself in nature through outdoor adventures, 
+                as well as engaging in physical activities that keep me energized and balanced. These experiences
+                 inspire me to approach challenges with fresh perspectives and resilience.
+              </p>
+              <p className="text-lg text-slate-300 leading-relaxed">
+                I’m continuously exploring new technologies, contributing to open-source projects, and learning to stay 
+                at the forefront of industry trends—all while embracing a lifestyle that values both innovation and well-being.
               </p>
             </div>
             <div className="relative">
@@ -363,7 +370,7 @@ function App() {
 
       <div className="text-center p-4 bg-slate-900/50 backdrop-blur-sm rounded-lg shadow-md border border-purple-500/20">
         <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-cyan-400 mb-2">
-          10+
+          5+
         </div>
         <div className="text-sm text-slate-300">Projects Built</div>
       </div>
@@ -632,7 +639,7 @@ function App() {
 
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/albertalcance.ecnaclatrebla/"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-2 px-6 py-3 bg-slate-800/50 backdrop-blur-md text-white rounded-lg shadow-md hover:shadow-xl transition-all hover:-translate-y-2 hover:scale-105 border border-slate-700/50 hover:border-purple-500/50"
@@ -641,7 +648,7 @@ function App() {
               <span className="font-medium">Facebook</span>
             </a>
             <a
-              href="https://www.facebook.com/albertalcance.ecnaclatrebla/"
+              href="https://github.com/Brrrt2"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-2 px-6 py-3 bg-slate-800/50 backdrop-blur-md text-white rounded-lg shadow-md hover:shadow-xl transition-all hover:-translate-y-2 hover:scale-105 border border-slate-700/50 hover:border-purple-500/50"
