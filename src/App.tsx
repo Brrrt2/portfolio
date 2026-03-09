@@ -108,7 +108,7 @@ function App() {
       title: 'Logix',
       description: 'A digital purchase book system for encoding digital and printed receipts using Fine-Tuned TrOCR.',
       tech: ['Node.js', 'Firebase', 'TrOCR','NER'],
-      link: 'https://logix-one.vercel.app',
+      link: 'https://logix-final-dev.vercel.app/',
       icon: '/assets/logo.png'
     },
     {
